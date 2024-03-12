@@ -9,9 +9,23 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('fonts/poppins/Poppins-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('fonts/poppins/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-Italic';
+  src: url('fonts/poppins/Poppins-Italic.ttf') format('truetype');
+}
 body {
-  background-color: #1e1e1e;
-  color: white;
+  background-color: #eeeeee;
+  color: #1e1e1e;
+  font-family: "Poppins-Regular";
 }
 
 h1,
@@ -34,6 +48,9 @@ a:hover {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
+p{
+  font-family: "Poppins-Regular";
+}
 
 .p-r {
   position: relative;
@@ -53,13 +70,13 @@ a:hover {
   color: #4e4e4e;
 }
 
-.box-shadow,
+/* .box-shadow,
 .card-blog,
 .work-box,
 .service-box,
-.paralax-mf {
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-}
+.paralax-mf { */
+  /* box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1); */
+/* } */
 
 .box-shadow-a,
 .button:hover {
@@ -160,6 +177,8 @@ a:hover {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: black;
+  font-family: "Poppins-Bold";
 }
 
 .subtitle-a {
@@ -183,6 +202,7 @@ a:hover {
   font-size: 2rem;
   position: relative;
   color: #0078ff;
+  font-family: "Poppins-Bold";
 }
 
 /* .title-left:before {
@@ -203,10 +223,10 @@ a:hover {
   border-radius: 16px;
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: black;
+  background-color: white;
   margin-bottom: 3rem;
   z-index: 2;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2); */
 }
 
 @media (min-width: 768px) {
@@ -237,7 +257,7 @@ a:hover {
 }
 
 .socials .social-icon{
-  vertical-align: middle;
+  vertical-align: sub;
 }
 
 .socials .ico-circle:hover {
@@ -469,6 +489,7 @@ a:hover {
   padding: 0;
   font-weight: 600;
   letter-spacing: 1px;
+  font-family: "Poppins-Bold";
 }
 
 #header .logo a {
@@ -771,6 +792,7 @@ a:hover {
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
+  font-family: "Poppins-Bold";
 }
 
 .hero .hero-image {
@@ -790,6 +812,7 @@ a:hover {
   font-size: 1.5rem;
   font-weight: 600;
   color: grey;
+  font-family: "Poppins-Bold";
 }
 
 @media (min-width: 768px) {
@@ -960,7 +983,7 @@ a:hover {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: black;
+  background-color: white;
   border-radius: 16px !important;
 }
 
@@ -1007,6 +1030,7 @@ a:hover {
 
 .w-title {
   font-size: 1.2rem;
+  color: #1e1e1e;
 }
 
 /*--------------------------------------------------------------
@@ -1173,7 +1197,7 @@ a:hover {
 }
 
 .contact-text{
-  color: white;
+  color: #1e1e1e;
 }
 
 .php-email-form .sent-message {
