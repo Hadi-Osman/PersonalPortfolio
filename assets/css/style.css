@@ -13,16 +13,19 @@
 @font-face {
   font-family: 'Poppins-Bold';
   src: url('fonts/poppins/Poppins-Bold.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Poppins-Regular';
   src: url('fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Poppins-Italic';
   src: url('fonts/poppins/Poppins-Italic.ttf') format('truetype');
+  font-display: swap;
 }
 
 body {
@@ -149,11 +152,11 @@ p {
 
 @media (max-width: 768px) {
   .display-table {
-    display:inline;
+    display: inline;
   }
 }
 
-.table-row{
+.table-row {
   display: table-row;
 }
 
@@ -1088,8 +1091,16 @@ p {
   color: #1e1e1e;
 }
 
-.display-photo{
+.display-photo {
   border-radius: 16px;
+  width: -webkit-fill-available;
+  height: fit-content;
+  /* padding: 1rem 0; */
+}
+
+.display-photo-banner {
+  border-radius: 16px;
+  height: fit-content;
   width: -webkit-fill-available;
   /* padding: 1rem 0; */
 }
