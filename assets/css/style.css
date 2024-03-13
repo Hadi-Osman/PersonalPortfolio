@@ -157,7 +157,8 @@ p{
 }
 
 .sect-mt4 {
-  margin-top: 0rem;
+  margin-top: 4rem;
+  background-color: white;
 }
 
 /*--/ Title s /--*/
@@ -202,6 +203,13 @@ p{
   font-size: 2rem;
   position: relative;
   color: #0078ff;
+  font-family: "Poppins-Bold";
+}
+
+.subtitle-left{
+  font-size: 1.5rem;
+  position: relative;
+  color: black;
   font-family: "Poppins-Bold";
 }
 
@@ -995,6 +1003,12 @@ p{
   display: block;
   overflow: hidden;
   border-radius: 16px;
+  text-align-last: center;
+  height: 300px;
+}
+
+.project-image{
+  width: fit-content;
 }
 
 .work-img img {
@@ -1178,6 +1192,7 @@ p{
 
 .contact-mf {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 767px) {
@@ -1493,7 +1508,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background: #1e1e1e;
 }
 
 footer .copyright {
