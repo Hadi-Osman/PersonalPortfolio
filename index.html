@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,17 +37,17 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">H.O.</a></h1>
+      <h1 class="logo"><a href="index.html" aria-label="Home">H.O.</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto " href="#photos">Creative</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto active" href="#hero" aria-label="Home">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about" aria-label="About">About</a></li>
+          <li><a class="nav-link scrollto " href="#work" aria-label="Work">Work</a></li>
+          <li><a class="nav-link scrollto " href="#photos" aria-label="Photos">Creative</a></li>
+          <li><a class="nav-link scrollto" href="#contact" aria-label="Contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -65,22 +65,23 @@
         <div class="table-cell">
           <div class="container">
             <div class="about-img">
-              <img src="assets/img/pfp.webp" class="hero-image img-fluid rounded b-shadow-a" alt="">
+              <img src="assets/img/pfp.webp" class="hero-image img-fluid rounded b-shadow-a" alt="Hero Image">
             </div>
           </div>
           <div class="container">
             <!--<p class="display-6 color-d">Hello, world!</p>-->
             <h1 class="hero-title mb-4">Hey, I'm Hadi Osman</h1>
-            <p class="hero-subtitle"><span class="typed" data-typed-items="Designer, Developer, Photographer"></span></p>
+            <p class="hero-subtitle"><span class="typed" data-typed-items="Designer, Developer, Photographer"></span>
+            </p>
             <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
           </div>
         </div>
       </div>
     </div>
-    <h1 class="mt-auto mb-4" style="position: absolute;vertical-align: bottom;top: 90vh;"><i
-        class="bi bi-arrow-down-square"></i></h1>
-
-
+    
+      <h1 class="mt-auto mb-4" style="position: absolute;vertical-align: bottom;top: 90vh;"><a class="scrollto" href="#about"><i
+          class="bi bi-arrow-down-square"></i></a></h1>
+    
   </div><!-- End Hero Section -->
 
   <main id="main">
@@ -92,7 +93,7 @@
           <div class="col-sm-12">
             <div class="row">
               <div class="col-md-6 my-auto">
-                <img src="assets/img/counters-bg.webp" class="img-fluid" alt=""
+                <img src="assets/img/counters-bg.webp" class="img-fluid" alt="Office Image"
                   style="max-height: 40vh;border-radius: 16px;">
               </div>
               <div class="col-md-6 my-auto">
@@ -113,12 +114,12 @@
                   <p class="lead">
                     I like to work with Flutter for mobile projects. I am also currently working with the angular and
                     .NET frameworks. You can find more of my work here on <a href="https://github.com/Hadi-Osman"
-                      style="color: #0078ff; text-decoration: underline;">GitHub</a>.
+                      style="color: #0078ff; text-decoration: underline;" aria-label="Hadi's Github">GitHub</a>.
                   </p>
                   <p class="lead">
                     I also like graphic design and photography, check out my <a
-                      href="https://www.instagram.com/0sman.hadi/"
-                      style="color: #0078ff; text-decoration: underline;">instagram</a> for more on that!
+                      href="https://www.instagram.com/0sman.hadi/" style="color: #0078ff; text-decoration: underline;"
+                      aria-label="Hadi's Instagram">instagram</a> for more on that!
                   </p>
                 </div>
               </div>
@@ -144,9 +145,10 @@
         <div class="row">
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/TrackOut-logo.webp" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/TrackOut-logo.webp" aria-label="TrackOut Logo" data-gallery="portfolioGallery"
+                class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/TrackOut-logo.webp" alt="" class="img-fluid project-image">
+                  <img src="assets/img/TrackOut-logo.webp" alt="TrackOut Logo Image" class="img-fluid project-image">
                 </div>
               </a>
               <div class="work-content">
@@ -163,9 +165,10 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/fetian-gym.webp" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/fetian-gym.webp" aria-label="Fetian Gym Logo" data-gallery="portfolioGallery"
+                class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/fetian-gym.webp" alt="" class="img-fluid project-image">
+                  <img src="assets/img/fetian-gym.webp" alt="Fetian Gym Logo Image" class="img-fluid project-image">
                 </div>
               </a>
               <div class="work-content">
@@ -182,9 +185,10 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/NMS-logo.webp" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/NMS-logo.webp" aria-label="NMS Logo" data-gallery="portfolioGallery"
+                class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/NMS-logo.webp" alt="" class="img-fluid project-image">
+                  <img src="assets/img/NMS-logo.webp" alt="NMS Logo Image" class="img-fluid project-image">
                 </div>
               </a>
               <div class="work-content">
@@ -217,37 +221,48 @@
             </div>
           </div>
         </div>
-        <a href="assets/img/VLX400Banner2.webp" data-gallery="PhotosGallery" class="portfolio-lightbox">
-          <img class="display-photo-banner my-2" src="assets/img/VLX400Banner2.webp">
+        <a href="assets/img/VLX400Banner2.webp" aria-label="VLX400Banner2" data-gallery="PhotosGallery"
+          class="portfolio-lightbox">
+          <img class="display-photo-banner my-2" src="assets/img/VLX400Banner2.webp" alt="VLX Banner Image">
         </a>
         <!-- <img class="display-photo my-2" src="assets/img/VLX400Banner2.jpg"> -->
         <div class="row photo-row">
           <div class="column photo-column">
-            <a href="assets/img/VLX400Detail.webp" data-gallery="PhotosGallery" class="portfolio-lightbox">
-              <img class="display-photo" src="assets/img/VLX400Detail.webp"></a>
-            <a href="assets/img/VLX400Poster4.webp" data-gallery="PhotosGallery" class="portfolio-lightbox">
-              <img class="display-photo" src="assets/img/VLX400Poster4.webp"></a>
+            <a href="assets/img/VLX400Detail.webp" aria-label="VLX400Detail" data-gallery="PhotosGallery"
+              class="portfolio-lightbox">
+              <img class="display-photo" src="assets/img/VLX400Detail.webp" alt="VLX400Detail Image"></a>
+            <a href="assets/img/VLX400Poster4.webp" aria-label="VLX400Poster4" data-gallery="PhotosGallery"
+              class="portfolio-lightbox">
+              <img class="display-photo" src="assets/img/VLX400Poster4.webp" alt="VLX400Poster4 Image"></a>
           </div>
           <div class="column photo-column">
-            <a href="assets/img/VLX400Poster2.webp" data-gallery="PhotosGallery" class="portfolio-lightbox">
-              <img class="display-photo" src="assets/img/VLX400Poster2.webp" style="height: -webkit-fill-available;">
+            <a href="assets/img/VLX400Poster2.webp" aria-label="VLX400Poster2" data-gallery="PhotosGallery"
+              class="portfolio-lightbox">
+              <img class="display-photo" src="assets/img/VLX400Poster2.webp" alt="VLX400Poster2 Image"
+                style="height: -webkit-fill-available;">
             </a>
           </div>
           <div class="column photo-column">
-            <a href="assets/img/VLX400Poster.webp" data-gallery="PhotosGallery" class="portfolio-lightbox">
-              <img class="display-photo" src="assets/img/VLX400Poster.webp"></a>
-            <a href="assets/img/VLX400Poster5.webp" data-gallery="PhotosGallery" class="portfolio-lightbox">
-              <img class="display-photo" src="assets/img/VLX400Poster5.webp"></a>
+            <a href="assets/img/VLX400Poster.webp" aria-label="VLX400Poster" data-gallery="PhotosGallery"
+              class="portfolio-lightbox">
+              <img class="display-photo" src="assets/img/VLX400Poster.webp" alt="VLX400Poster Image"></a>
+            <a href="assets/img/VLX400Poster5.webp" aria-label="VLX400Poster5" data-gallery="PhotosGallery"
+              class="portfolio-lightbox">
+              <img class="display-photo" src="assets/img/VLX400Poster5.webp" alt="VLX400Poster5 Image"></a>
           </div>
           <div class="column photo-column">
-            <a href="assets/img/VLX400Poster6.webp" data-gallery="PhotosGallery" class="portfolio-lightbox">
-              <img class="display-photo" src="assets/img/VLX400Poster6.webp"></a>
-            <a href="assets/img/VLX400Detail2.webp" data-gallery="PhotosGallery" class="portfolio-lightbox">
-              <img class="display-photo" src="assets/img/VLX400Detail2.webp"></a>
+            <a href="assets/img/VLX400Poster6.webp" aria-label="VLX400Poster6" data-gallery="PhotosGallery"
+              class="portfolio-lightbox">
+              <img class="display-photo" src="assets/img/VLX400Poster6.webp" alt="VLX400Poster6 Image"></a>
+            <a href="assets/img/VLX400Detail2.webp" aria-label="VLX400Detail2" data-gallery="PhotosGallery"
+              class="portfolio-lightbox">
+              <img class="display-photo" src="assets/img/VLX400Detail2.webp" alt="VLX400Detail2 Image"></a>
           </div>
         </div>
-        <a href="assets/img/VLX400banner.webp" data-gallery="PhotosGallery" class="portfolio-lightbox">
-          <img class="display-photo-banner my-2" src="assets/img/VLX400banner.webp" style="width:  -webkit-fill-available;"></a>
+        <a href="assets/img/VLX400banner.webp" aria-label="VLX400banner" data-gallery="PhotosGallery"
+          class="portfolio-lightbox">
+          <img class="display-photo-banner my-2" src="assets/img/VLX400banner.webp" alt="VLX400banner Image"
+            style="width:  -webkit-fill-available;"></a>
       </div>
     </section>
 
@@ -298,13 +313,13 @@
         <div class="col-sm-6 my-auto">
           <div class="socials">
             <ul>
-              <li><a href="https://www.instagram.com/0sman.hadi/"><span class="ico-circle"><i
-                      class="bi bi-instagram social-icon"></i></span></a>
+              <li><a href="https://www.instagram.com/0sman.hadi/" aria-label="Hadi's Instagram"><span
+                    class="ico-circle"><i class="bi bi-instagram social-icon"></i></span></a>
               </li>
-              <li><a href="https://www.linkedin.com/in/hadi-osman-90344a1bb/"><span class="ico-circle"><i
-                      class="bi bi-linkedin social-icon"></i></span></a>
+              <li><a href="https://www.linkedin.com/in/hadi-osman-90344a1bb/" aria-label="Hadi's LinkedIn"><span
+                    class="ico-circle"><i class="bi bi-linkedin social-icon"></i></span></a>
               </li>
-              <li><a href="https://github.com/Hadi-Osman"><span class="ico-circle"><i
+              <li><a href="https://github.com/Hadi-Osman" aria-label="Hadi's GitHub"><span class="ico-circle"><i
                       class="bi bi-github social-icon"></i></span></a>
               </li>
             </ul>
@@ -315,7 +330,7 @@
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+  <a href="#" aria-label="Back To Top" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
