@@ -265,7 +265,7 @@ p{
 }
 
 .socials .social-icon{
-  vertical-align: sub;
+  vertical-align: -webkit-baseline-middle;
 }
 
 .socials .ico-circle:hover {
@@ -1213,6 +1213,12 @@ p{
 
 .contact-text{
   color: #1e1e1e;
+  font-family: "Poppins-Italic";
+}
+
+.contact-text-header{
+  color: #1e1e1e;
+  font-family: "Poppins-Bold";
 }
 
 .php-email-form .sent-message {
@@ -1513,6 +1519,7 @@ footer {
 
 footer .copyright {
   margin-bottom: 0.3rem;
+  text-align-last: left;
 }
 
 footer .credits {
