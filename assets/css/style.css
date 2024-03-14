@@ -848,6 +848,7 @@ p {
 
 .hero .hero-image {
   height: 40vh;
+  width: 40vh;
   border-radius: 360px !important;
   border: grey;
   border-width: 5px;
@@ -858,6 +859,7 @@ p {
 @media (max-width: 768px) {
   .hero .hero-image {
     height: 60vw;
+    width: 60vw;
   }
 }
 
