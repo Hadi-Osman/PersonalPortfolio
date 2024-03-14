@@ -739,14 +739,14 @@ p {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 6vh;
+  top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
   padding: 10px 0;
   background-color: #000;
   overflow-y: auto;
-  transition: 0.3s;
+  transition: 750ms;
 }
 
 .navbar-mobile>ul>li {
@@ -847,13 +847,13 @@ p {
 }
 
 .hero .hero-image {
+  aspect-ratio: 1;
   height: 40vh;
   width: 40vh;
   border-radius: 360px !important;
   border: grey;
   border-width: 5px;
   border-style: solid;
-  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -865,6 +865,7 @@ p {
 
 .about-img {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .gslide-image img.zoomable {
@@ -873,15 +874,29 @@ p {
   border-radius: 16px !important;
 }
 
+.down-button {
+  position: absolute;
+  vertical-align: bottom;
+  top: 85vh;
+  font-size: 3rem;
+}
+
 @media (min-width: 768px) {
   .hero .hero-title {
-    font-size: 4.5rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .down-button {
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero .hero-title {
     text-align: center;
+    font-size: 1.5rem;
   }
 }
 
