@@ -1145,9 +1145,8 @@ p {
 
 .display-photo-banner {
   border-radius: 16px;
-  height: fit-content;
+  width: -moz-available;
   width: -webkit-fill-available;
-  /* padding: 1rem 0; */
 }
 
 .photo-row {
