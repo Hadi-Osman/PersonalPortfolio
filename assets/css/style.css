@@ -732,8 +732,8 @@ p {
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 22.5px;
+  right: 12.5px;
 }
 
 .navbar-mobile ul {
@@ -742,7 +742,7 @@ p {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  left: 0px;
+  left: 50vw;
   padding: 10px 0;
   background-color: #000;
   overflow-y: auto;
