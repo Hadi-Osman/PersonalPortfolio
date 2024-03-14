@@ -866,6 +866,8 @@ p {
 }
 
 .gslide-image img.zoomable {
+  margin-left: 15px;
+  margin-right: 15px;
   border-radius: 16px !important;
 }
 
