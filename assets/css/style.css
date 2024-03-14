@@ -45,13 +45,13 @@ h6 {
 }
 
 a {
-  color: white;
+  color: white !important;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #0078ff;
+  color: #0078ff !important;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -292,6 +292,7 @@ p {
 
 .socials .social-icon {
   vertical-align: -webkit-baseline-middle;
+  font-size: 22px;
 }
 
 .socials .ico-circle:hover {
@@ -528,6 +529,18 @@ p {
 
 #header .logo a {
   color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out 0s;
+  text-decoration: none;
+  background-image: linear-gradient(white, white);
+  background-size: 0% 2px;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+}
+
+#header .logo a:hover {
+  background-size: 100% 2px;
 }
 
 #header .logo img {
@@ -606,7 +619,7 @@ p {
 .navbar li:hover>a:before,
 .navbar .active:before {
   visibility: visible;
-  width: 80%;
+  width: 100%;
 }
 
 .navbar a:hover,
@@ -724,12 +737,12 @@ p {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  top: 6vh;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #000;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -836,10 +849,15 @@ p {
   border: grey;
   border-width: 5px;
   border-style: solid;
+  margin-bottom: 2rem;
 }
 
 .about-img {
   text-align: center;
+}
+
+.gslide-image img.zoomable {
+  border-radius: 16px !important;
 }
 
 @media (min-width: 768px) {
@@ -853,6 +871,12 @@ p {
     text-align: center;
   }
 }
+
+/* @media (max-width: 768px) {
+  .hero .hero-image {
+    margin-bottom: 2rem;
+  }
+} */
 
 .hero .hero-subtitle {
   font-size: 1.5rem;
@@ -920,6 +944,10 @@ p {
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.lead{
+  font-size: medium !important;
 }
 
 /* .about-me{
