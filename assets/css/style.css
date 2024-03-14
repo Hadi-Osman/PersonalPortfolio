@@ -725,7 +725,7 @@ p {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(78, 78, 78, 0.9);
+  background: rgba(0, 0, 0, 0.6);
   transition: 0.3s;
   z-index: 999;
 }
@@ -815,7 +815,7 @@ p {
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  height: 100vh;
+  height: 105vh;
   position: relative;
   color: #fff;
   background-color: black;
@@ -877,7 +877,7 @@ p {
 .down-button {
   position: absolute;
   vertical-align: bottom;
-  top: 85vh;
+  top: 90vh;
   font-size: 3rem;
 }
 
@@ -890,13 +890,14 @@ p {
 @media (max-width: 768px) {
   .down-button {
     font-size: 3rem;
+    top: 80vh;
   }
 }
 
 @media (max-width: 768px) {
   .hero .hero-title {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 }
 
