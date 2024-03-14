@@ -29,8 +29,8 @@
 }
 
 body {
-  background-color: #eeeeee;
-  color: #1e1e1e;
+  background-color: #eeeeee !important;
+  color: #1e1e1e !important;
   font-family: "Poppins-Regular";
   overflow-x: hidden;
 }
@@ -921,6 +921,11 @@ p {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+/* .about-me{
+  border-radius: 16px;
+  background-color: white;
+} */
 
 /* .about-mf .about-img {
   margin-bottom: 2rem;
