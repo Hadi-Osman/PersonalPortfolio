@@ -845,11 +845,18 @@ p {
 }
 
 .hero .hero-image {
+  height: 40vh;
   border-radius: 360px !important;
   border: grey;
   border-width: 5px;
   border-style: solid;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero .hero-image {
+    height: 60vw;
+  }
 }
 
 .about-img {
