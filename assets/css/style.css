@@ -291,8 +291,10 @@ p {
 }
 
 .socials .social-icon {
+  padding-left: 1rem;
+  padding-right: 1rem;
   vertical-align: -webkit-baseline-middle;
-  font-size: 22px;
+  font-size: 32px;
 }
 
 .socials .ico-circle:hover {
@@ -953,7 +955,7 @@ p {
   padding-bottom: 4rem;
 }
 
-.lead{
+.lead {
   font-size: medium !important;
 }
 
