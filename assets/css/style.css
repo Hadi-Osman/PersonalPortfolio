@@ -994,13 +994,12 @@ p {
 
 @media (max-width: 767px) {
   .about-me {
-    text-align: justify;
-    text-align-last: center;
+    text-align: center !important;
   }
 
   p {
-    text-align: justify;
-    text-align-last: center;
+    text-align: justify !important;
+    text-align-last: center !important;
   }
 }
 
