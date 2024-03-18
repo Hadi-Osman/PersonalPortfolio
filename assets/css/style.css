@@ -1809,13 +1809,13 @@ footer {
 
 footer .copyright {
   margin-bottom: 0.3rem;
-  text-align-last: left;
+  text-align-last: left !important;
 }
 
 @media (max-width: 767px) {
   footer .copyright {
     margin-bottom: 0.3rem;
-    text-align-last: center;
+    text-align-last: center !important;
   }
 }
 
