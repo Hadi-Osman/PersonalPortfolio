@@ -1815,6 +1815,7 @@ footer .copyright {
 @media (max-width: 767px) {
   footer .copyright {
     margin-bottom: 0.3rem;
+    text-align: center !important;
     text-align-last: center !important;
   }
 }
