@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -87,6 +87,7 @@
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
+        select('#navbar-mobile').classList.add('hidden')
       } else {
         selectHeader.classList.remove('header-scrolled')
       }
@@ -114,16 +115,26 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+  on('click', '.mobile-nav-on', function (e) {
+
+    select('#navbar').classList.add('hidden')
+    select('#navbar-mobile').classList.remove('hidden')
+
+    select('#navbar').classList.add
+    select('#navbar-mobile').classList.add
+  })
+  on('click', '.mobile-nav-off', function (e) {
+    select('#navbar').classList.remove('hidden')
+    select('#navbar-mobile').classList.add('hidden')
+
+    select('#navbar').classList.add
+    select('#navbar-mobile').classList.add
   })
 
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -133,17 +144,21 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
+      let navbar = select('#navbar-mobile')
+
+      navbar.classList.add('hidden')
+
+
+      // if (navbar.classList.contains('navbar-mobile')) {
+      //   navbar.classList.remove('navbar-mobile')
+      //   let navbarToggle = select('.mobile-nav-toggle')
+      //   navbarToggle.classList.toggle('bi-list')
+      //   navbarToggle.classList.toggle('bi-x')
+      // }
       scrollto(this.hash)
     }
   }, true)

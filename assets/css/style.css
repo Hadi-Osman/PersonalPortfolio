@@ -550,8 +550,28 @@ p {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 1);
   padding: 12px 0;
+}
+
+#header.header-scrolled {
+  .logo a{
+    color: #000 !important;
+  }
+
+  .logo a:hover{
+    color: #0078ff !important;
+  }
+
+  .mobile-nav-on{
+    color: black !important;
+  }
+  .navbar ul>li>a{
+    color: #000 !important;
+  }
+  .navbar ul>li:hover>a{
+    color: #0078ff !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -699,7 +719,7 @@ p {
 /**
 * Mobile Navigation 
 */
-.mobile-nav-toggle {
+.mobile-nav-on {
   color: #fff;
   font-size: 28px;
   cursor: pointer;
@@ -709,7 +729,7 @@ p {
 }
 
 @media (max-width: 991px) {
-  .mobile-nav-toggle {
+  .mobile-nav-on {
     display: block;
   }
 
@@ -718,24 +738,59 @@ p {
   }
 }
 
+.mobile-nav-off {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-off {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+/* .mobile-nav-toggle::before .hidden {
+  left: -100%;
+} */
+
 .navbar-mobile {
   align-items: center;
   background-color: #000;
   display: flex;
   height: 100vh;
   justify-content: center;
-  left: 0;
   position: fixed;
   text-align: center;
   top: 0;
+  left: 0 !important;
   width: 100%;
   z-index: 999;
+  transition: all .3s ease-in-out;
 }
 
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 22.5px;
-  right: 12.5px;
+.navbar-mobile.hidden {
+  left: -100% !important;
+  transition: all .3s ease-in-out;
+}
+
+.navbar-mobile .mobile-nav-on {
+  position: absolute !important;
+  top: 22.5px !important;
+  right: 12.5px !important;
+}
+
+.navbar-mobile .mobile-nav-off {
+  position: absolute !important;
+  top: 22.5px !important;
+  right: 12.5px !important;
 }
 
 .navbar-mobile ul {
@@ -745,12 +800,14 @@ p {
   gap: 2rem;
   list-style: none;
   background-color: #000;
+  transition: 0.3s;
+  padding: 0;
 }
 
 .navbar-mobile>ul>li {
   padding: 0;
   text-align: center !important;
-  text-align-last: justify;
+  font-family: "Poppins-Bold";
 }
 
 .navbar-mobile a:hover:before,
@@ -1099,6 +1156,8 @@ p {
 # Portfolio
 --------------------------------------------------------------*/
 .work-box {
+  height: 25rem;
+  position: relative;
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1115,7 +1174,6 @@ p {
   overflow: hidden;
   border-radius: 16px;
   text-align-last: center;
-  height: 25%;
 }
 
 .project-image {
@@ -1127,6 +1185,9 @@ p {
 }
 
 .work-content {
+  position: absolute;
+  bottom: 0;
+  width: -webkit-fill-available;
   padding: 2rem 3% 1rem 4%;
 }
 
