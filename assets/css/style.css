@@ -555,21 +555,23 @@ p {
 }
 
 #header.header-scrolled {
-  .logo a{
+  .logo a {
     color: #000 !important;
   }
 
-  .logo a:hover{
+  .logo a:hover {
     color: #0078ff !important;
   }
 
-  .mobile-nav-on{
+  .mobile-nav-on {
     color: black !important;
   }
-  .navbar ul>li>a{
+
+  .navbar ul>li>a {
     color: #000 !important;
   }
-  .navbar ul>li:hover>a{
+
+  .navbar ul>li:hover>a {
     color: #0078ff !important;
   }
 }
@@ -1442,6 +1444,11 @@ p {
   .contact-text-header {
     text-align: center !important;
   }
+}
+
+.contact-button {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .php-email-form .error-message {
