@@ -915,10 +915,20 @@ p {
   aspect-ratio: 1;
   height: 40vh;
   width: 40vh;
-  border-radius: 360px !important;
+  border-radius: 50% !important;
   border: white;
   border-width: 5px;
   border-style: solid;
+}
+
+.glightbox-heroimagebig {
+  .gslide-image img,
+  .gslide-image img.zoomable {
+    border-radius: 50% !important;
+    border: white;
+    border-width: 5px;
+    border-style: solid;
+  }
 }
 
 @media (max-width: 768px) {

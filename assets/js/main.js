@@ -194,7 +194,13 @@
    * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+    selector: '.portfolio-lightbox',
+    autoplayVideos: true,
+  });
+
+  const heroImageBig = GLightbox({
+    selector: '.hero-image-big',
+    skin: 'heroimagebig'
   });
 
   /**
