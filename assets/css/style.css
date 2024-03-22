@@ -933,7 +933,14 @@ p {
   margin-bottom: 2rem;
 }
 
+.gslide-image img,
 .gslide-image img.zoomable {
+  border-radius: 16px !important;
+}
+
+.plyr--video,
+.plyr__video-wrapper,
+.plyr__poster {
   border-radius: 16px !important;
 }
 
@@ -1228,7 +1235,7 @@ p {
 }
 
 .display-photo {
-  
+
   border-radius: 16px;
   /* width: -webkit-fill-available !important;
   height: fit-content !important; */
