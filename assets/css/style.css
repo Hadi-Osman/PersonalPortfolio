@@ -974,7 +974,7 @@ p {
   animation: morph 6s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   border: white;
-  border-width: 5px;
+  border-width: 2.5px;
   border-style: solid;
   height: 40vh;
   width: 40vh;
