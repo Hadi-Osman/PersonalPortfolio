@@ -1228,22 +1228,30 @@ p {
 }
 
 .display-photo {
+  
   border-radius: 16px;
-  width: -webkit-fill-available;
-  height: fit-content;
-  /* padding: 1rem 0; */
+  /* width: -webkit-fill-available !important;
+  height: fit-content !important; */
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .display-photo-banner {
+  flex-direction: row;
   border-radius: 16px;
-  width: -moz-available;
-  width: -webkit-fill-available;
+  width: -moz-available !important;
+  width: -webkit-fill-available !important;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .photo-row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 8px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -1256,7 +1264,7 @@ p {
 .photo-column img {
   margin-top: 8px;
   vertical-align: middle;
-  width: 100%;
+  width: 100% !important;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
