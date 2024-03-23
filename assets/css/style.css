@@ -29,7 +29,7 @@
 }
 
 body {
-  background-color: #eeeeee !important;
+  background-color: #f9f9f9 !important;
   color: #1e1e1e !important;
   font-family: "Poppins-Regular";
   overflow-x: hidden;
@@ -168,7 +168,7 @@ p {
 
 /*--/ Sections /--*/
 .sect-4 {
-  padding: 4rem 0;
+  padding: 4rem 1rem;
 }
 
 .sect-pt4 {
@@ -176,8 +176,7 @@ p {
 }
 
 .sect-mt4 {
-  margin-top: 4rem;
-  background-color: white;
+  background-color: #f9f9f9;
 }
 
 /*--/ Title s /--*/
@@ -219,7 +218,7 @@ p {
 }
 
 .title-left {
-  font-size: 2rem;
+  font-size: 1rem;
   position: relative;
   color: #0078ff;
   font-family: "Poppins-Bold";
@@ -550,6 +549,7 @@ p {
 }
 
 #header.header-scrolled {
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
   background: rgba(255, 255, 255, 1);
   padding: 12px 0;
 }
@@ -1003,7 +1003,7 @@ p {
   .gslide-image img.zoomable {
     border-radius: 50% !important;
     border: white;
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid;
   }
 }
@@ -1131,6 +1131,10 @@ p {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about-mf{
+  background-color: #fff;
+  padding: 4rem 1rem;
+}
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1185,6 +1189,10 @@ p {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.photos-mf{
+  background-color: #fff;
+}
+
 .service-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
@@ -1261,6 +1269,10 @@ p {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.work{
+  background-color: #f9f9f9;
+}
+
 .work-box {
   height: 25rem;
   position: relative;
@@ -1574,6 +1586,7 @@ p {
 .contact-text-header {
   color: #1e1e1e;
   font-family: "Poppins-Bold";
+  font-size: 1.5rem !important;
 }
 
 .php-email-form .sent-message {
@@ -1984,7 +1997,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #1e1e1e;
+  background: #2d2e32;
 }
 
 footer .copyright {
