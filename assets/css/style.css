@@ -28,6 +28,11 @@
   font-display: swap;
 }
 
+* {
+  scrollbar-color: #8e8e8e transparent;
+  scrollbar-width: none;
+}
+
 body {
   background-color: #f9f9f9 !important;
   color: #1e1e1e !important;
@@ -1632,12 +1637,12 @@ p {
   font-family: "Poppins-Italic";
 }
 
-.contact-text a{
+.contact-text a {
   color: #1e1e1e !important;
   font-family: "Poppins-Italic";
 }
 
-.contact-text a:hover{
+.contact-text a:hover {
   color: #147efb !important;
 }
 
