@@ -240,6 +240,15 @@ p {
   bottom: -12px;
 } */
 
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /*------/ Box /------*/
 .box-pl2 {
   padding-left: 2rem;
@@ -515,7 +524,7 @@ p {
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 999;
   padding: 20px 0;
 }
 
@@ -549,7 +558,7 @@ p {
 }
 
 #header.header-scrolled {
-  box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+  box-shadow: 0 0 32px rgba(0, 0, 0, .25);
   background: rgba(255, 255, 255, 1);
   padding: 12px 0;
 }
@@ -921,7 +930,7 @@ p {
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  height: 105vh;
+  height: 100vh;
   position: relative;
   color: #fff;
   background-color: #2d2e32;
@@ -992,10 +1001,6 @@ p {
 }
 
 .hero .hero-title {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
@@ -1074,7 +1079,7 @@ p {
 .down-button {
   position: absolute;
   vertical-align: bottom;
-  top: 90vh;
+  top: 85vh;
   font-size: 3rem;
 }
 
@@ -1086,8 +1091,7 @@ p {
 
 @media (max-width: 768px) {
   .down-button {
-    font-size: 3rem;
-    top: 85vh;
+    position: static;
   }
 }
 
