@@ -1130,7 +1130,7 @@ p {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .hero .hero-subtitle {
     text-align: center;
   }
