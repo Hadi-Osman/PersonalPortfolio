@@ -1201,6 +1201,45 @@ p {
   font-size: medium !important;
 }
 
+.logos {
+  display: ruby;
+  padding: 0 0 3rem 0;
+
+  .techStack,
+  .techStack-first,
+  .techStack-last {
+    transition: transform 400ms;
+  }
+
+  .techStack-first {
+    padding-right: 1rem;
+  }
+
+  .techStack {
+    padding: 0 1rem;
+  }
+
+  .techStack-last {
+    padding-left: 1rem;
+  }
+
+  .techStack:hover,
+  .techStack-first:hover,
+  .techStack-last:hover {
+    transform: translateY(-10px);
+  }
+}
+
+
+@media (max-width: 1024px) {
+
+  .techStack,
+  .techStack-first,
+  .techStack-last {
+    padding: 0 0 1rem 0 !important;
+  }
+}
+
 /* .about-mf .about-img {
   margin-bottom: 2rem;
 }
