@@ -1203,24 +1203,26 @@ p {
 
 .logos {
   display: ruby;
-  padding: 0 0 3rem 0;
+  padding: 0 0 0 0;
 
   .techStack,
   .techStack-first,
   .techStack-last {
     transition: transform 400ms;
+    padding-bottom: 1rem;
   }
 
   .techStack-first {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
   }
 
   .techStack {
-    padding: 0 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .techStack-last {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
   }
 
   .techStack:hover,
