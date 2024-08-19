@@ -23,16 +23,7 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Updated: Mar 10 2024 with Bootstrap v5.3.3
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -41,11 +32,11 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html" aria-label="Home">H.O.</a></h1>
+      <h1 class="logo unselectable"><a href="index.html" aria-label="Home">H.O.</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar unselectable">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero" aria-label="Home">Home</a></li>
           <li><a class="nav-link scrollto" href="#about" aria-label="About">About</a></li>
@@ -55,7 +46,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-on"></i>
       </nav><!-- .navbar -->
-      <nav id="navbar-mobile" class="navbar-mobile hidden">
+      <nav id="navbar-mobile" class="navbar-mobile hidden unselectable">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero" aria-label="Home">Home</a></li>
           <li><a class="nav-link scrollto" href="#about" aria-label="About">About</a></li>
@@ -71,32 +62,19 @@
 
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="hero route bg-image d-flex justify-content-center">
-    <div class="hero-content display-table">
-      <!-- <div class="table-cell">
-        
-      </div> -->
-      <div class="table-row">
-        <div class="table-cell">
-          <div class="container about-img">
-              <a href="assets/img/pfp.webp" aria-label="Hero profile" data-gallery="portfolioProfileGallery"
-                class="hero-image-big">
-                <div class="hero-image" alt="Hero Image"></div>
-              </a>
-          </div>
-          <div class="container">
-            <!--<p class="display-6 color-d">Hello, world!</p>-->
-            <h1 class="hero-title mb-4">Hey, I'm Hadi Osman</h1>
-            <p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Photographer, Designer"></span>
-            </p>
-            <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-          </div>
+    <div class="content">
+      <div class="hero-main">
+        <div class="hero-text">
+          <h1 class="hero-title mb-4 unselectable">Hey, I'm Hadi Osman</h1>
+          <p class="hero-subtitle unselectable"><span class="typed"
+              data-typed-items="Developer, Photographer, Designer"></span>
+          </p>
         </div>
+        <div class="hero-image" alt="Hero Image"></div>
       </div>
+      <h1 class="down-button"><a class="scrollto" href="#about" aria-label="About"><i
+            class="bi bi-arrow-down-square"></i></a></h1>
     </div>
-
-    <h1 class="down-button"><a class="scrollto" href="#about" aria-label="About"><i
-          class="bi bi-arrow-down-square"></i></a></h1>
-
   </div><!-- End Hero Section -->
 
   <main id="main">
@@ -105,6 +83,7 @@
     <section id="about" class="about-mf sect-4 route">
       <div class="container">
         <div class="row">
+
           <div class="col-sm-12">
             <div class="row">
               <div class="col-md-5 my-auto">
@@ -113,31 +92,37 @@
               </div>
               <div class="col-md-7 my-auto">
                 <div class="about-me pt-4 pt-md-0">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      About me
-                    </h5>
-                  </div>
-                  <h5 class="subtitle-left">
+                  <h5 class="title-left unselectable">
+                    About
+                  </h5>
+                  <h5 class="subtitle-left unselectable">
                     Computer and Communications Engineer,<br>
                     Based in Lebanon 📍
                   </h5>
-                  <p class="lead">
+                  <p class="lead unselectable">
                     Hey, my name is Hadi Osman. I'm a full stack developper. My passion is to design and implement
                     beautiful UI/UX for users
                   </p>
-                  <p class="lead">
+                  <p class="lead unselectable">
                     I like to work with Flutter for mobile projects. I am also currently working with the angular and
                     .NET frameworks. You can find more of my work here on <a href="https://github.com/Hadi-Osman"
-                      style="color: #0078ff !important; text-decoration: underline;"
+                      style="color: #92a5e0 !important; text-decoration: underline;"
                       aria-label="Hadi's Github">GitHub</a>.
                   </p>
-                  <p class="lead">
+                  <p class="lead unselectable">
                     I also like graphic design and photography, check out my <a
                       href="https://www.instagram.com/0sman.hadi/"
-                      style="color: #0078ff !important; text-decoration: underline;"
+                      style="color: #92a5e0 !important; text-decoration: underline;"
                       aria-label="Hadi's Instagram">instagram</a> for more on that!
                   </p>
+                </div>
+                <div align="center" class="logos">
+                  <img class="techStack-first" src="https://skillicons.dev/icons?i=angular,cs" />
+                  <img class="techStack" src="https://skillicons.dev/icons?i=flutter,firebase" />
+                  <img class="techStack" src="https://skillicons.dev/icons?i=html,css" />
+                  <img class="techStack" src="https://skillicons.dev/icons?i=js,ts" />
+                  <img class="techStack" src="https://skillicons.dev/icons?i=dotnet,git" />
+                  <img class="techStack-last" src="https://skillicons.dev/icons?i=ps,ai" />
                 </div>
               </div>
             </div>
@@ -152,7 +137,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h3 class="title-a">
+              <h3 class="title-a unselectable">
                 Projects
               </h3>
               <div class="line-mf"></div>
@@ -162,8 +147,8 @@
         <div class="row">
           <div class="col-md-4">
             <div class="work-box">
-              <a href="https://www.youtube.com/watch?v=lC9dblt6LjQ" aria-label="Fetian Gym Logo" data-gallery="portfolioGallery"
-                class="portfolio-lightbox">
+              <a href="https://www.youtube.com/watch?v=lC9dblt6LjQ" aria-label="Fetian Gym Logo"
+                data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/fetian-gym.webp" alt="Fetian Gym Logo Image" class="img-fluid project-image"
                     loading="lazy">
@@ -171,11 +156,11 @@
               </a>
               <div class="work-content">
                 <div class="row">
-                  <div class="col-sm-8">
-                      <h2 class="w-title">Fetian Gym - Gym membership manager</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Development - Flutter</span>
-                      </div>
+                  <div class="col-sm-8 unselectable">
+                    <h2 class="w-title">Fetian Gym - Gym membership manager</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Development - Flutter</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -183,7 +168,7 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="https://youtu.be/yOX1aRoXG50" aria-label="TrackOut Logo" data-gallery="portfolioGallery"
+              <a href="https://youtu.be/8HMimCAk60k" aria-label="TrackOut Logo" data-gallery="portfolioGallery"
                 class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/TrackOut-logo.webp" alt="TrackOut Logo Image" class="img-fluid project-image"
@@ -192,11 +177,11 @@
               </a>
               <div class="work-content">
                 <div class="row">
-                  <div class="col-sm-8">
-                      <h2 class="w-title">TrackOut - Workout Tracker</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Mobile Development - Flutter</span>
-                      </div>
+                  <div class="col-sm-8 unselectable">
+                    <h2 class="w-title">TrackOut - Workout Tracker</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Mobile Development - Flutter</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -213,11 +198,11 @@
               </a>
               <div class="work-content">
                 <div class="row">
-                  <div class="col-sm-8">
-                      <h2 class="w-title">NMS - IT Network Management System</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Mobile Development - Flutter</span>
-                      </div>
+                  <div class="col-sm-8 unselectable">
+                    <h2 class="w-title">NMS - IT Network Management System</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Mobile Development - Flutter</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -234,7 +219,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h3 class="title-a">
+              <h3 class="title-a unselectable">
                 Creative
               </h3>
               <div class="line-mf"></div>
@@ -243,10 +228,10 @@
         </div>
         <a href="assets/img/VLX400Banner2.webp" aria-label="VLX400Banner2" data-gallery="PhotosGallery"
           class="portfolio-lightbox">
-          <img class="display-photo-banner mt-2" src="assets/img/VLX400Banner2.webp" alt="VLX Banner Image"
+          <img class="display-photo-banner mt-2 unselectable" src="assets/img/VLX400Banner2.webp" alt="VLX Banner Image"
             loading="lazy">
         </a>
-        <div class="row photo-row">
+        <div class="row photo-row unselectable">
           <div class="column photo-column">
             <a href="assets/img/VLX400Detail.webp" aria-label="VLX400Detail" data-gallery="PhotosGallery"
               class="portfolio-lightbox">
@@ -284,12 +269,12 @@
         </div>
         <a href="assets/img/BMWInterior.webp" aria-label="BMWInterior" data-gallery="PhotosGallery"
           class="portfolio-lightbox">
-          <img class="display-photo-banner my-2" src="assets/img/BMWInterior.webp" alt="BMWInterior Image"
+          <img class="display-photo-banner mt-2 unselectable" src="assets/img/BMWInterior.webp" alt="BMWInterior Image"
             style="width:  -webkit-fill-available;" loading="lazy"></a>
         <a href="assets/img/VLX400banner.webp" aria-label="VLX400banner" data-gallery="PhotosGallery"
           class="portfolio-lightbox">
-          <img class="display-photo-banner my-2" src="assets/img/VLX400banner.webp" alt="VLX400banner Image"
-            style="width:  -webkit-fill-available;" loading="lazy"></a>
+          <img class="display-photo-banner mt-2 unselectable" src="assets/img/VLX400banner.webp"
+            alt="VLX400banner Image" style="width:  -webkit-fill-available;" loading="lazy"></a>
       </div>
     </section>
 
@@ -303,22 +288,24 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="title-box-2 pt-4 pt-md-0">
-                    <h6 class="title-left">
+                    <h6 class="title-left unselectable">
                       Contact
                     </h6>
                   </div>
-                  <div class="more-info">
+                  <div class="more-info unselectable">
                     <p class="lead contact-text-header">
                       Don't be shy! Hit me up 👇
                     </p>
                     <ul class="list-ico">
-                      <li class="contact-text"><span class="bi bi-geo-alt"></span>Beirut, Lebanon</li>
-                      <li class="contact-text"><span class="bi bi-envelope"></span>osman.hadi.me@gmail.com</li>
+                      <li class="contact-text"><span class="bi bi-geo-alt"></span><a
+                          href="https://maps.app.goo.gl/o65c5c6YbEznimcv6">Beirut, Lebanon</a></li>
+                      <li class="contact-text"><span class="bi bi-envelope"></span><a
+                          href="mailto:osman.hadi.me@gmail.com">osman.hadi.me@gmail.com</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="row justify-content-center pt-5">
+              <div class="row justify-content-center pt-5 unselectable">
                 <a class="link-button" href="assets/files/Hadi-Osman-Resume.pdf" download="Hadi-Osman-Resume"
                   target=”_blank”><button class="outline">
                     <ul class="contact-button">
@@ -343,11 +330,11 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 my-auto">
-          <div class="copyright-box">
+          <div class="copyright-box unselectable">
             <p class="copyright"><strong>Copyright &copy; 2024.</strong> All Rights Reserved</p>
           </div>
         </div>
-        <div class="col-sm-6 my-auto">
+        <div class="col-sm-6 my-auto unselectable">
           <div class="socials">
             <ul>
               <li><a href="https://www.instagram.com/0sman.hadi/" aria-label="Hadi's Instagram"><span><i
@@ -368,7 +355,7 @@
 
   <div id="preloader"></div>
   <a href="#" aria-label="Back To Top" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+      class="bi bi-arrow-up-short unselectable"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -378,7 +365,6 @@
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
